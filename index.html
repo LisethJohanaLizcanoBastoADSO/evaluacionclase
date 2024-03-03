@@ -1,274 +1,668 @@
-<!DOCTYPE html>
-<html lang="en">
+:root {
+  --primary: rgb(34 38 68);
+  --bg-white: rgb(245, 245, 245);
+  --bg-gray: rgb(224, 224, 224);
+  --bg-primary: var(--primary);
+  --bg-hover: rgba(64, 64, 64, 0.06);
+  --color-primary: var(--primary);
+  --color-gray: rgb(64, 64, 64);
+  --white: #fff;
+  --color-principal: rgba(245,233,228,255);
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Replica pag</title>
-</head>
+  --card-border: rgba(23, 23, 23, 0.06);
+  --box-shadow: rgba(0, 0, 0, 0.1);
+  --text-boder: rgb(212, 212, 212);
+  --link-border: rgb(44, 44, 46);
+  --link-border-primary: var(--primary);
+  --header-height: 60px;
+  --padding-layout: 70px;
+  --max-width: 1024px;
+  --color--letra: white;
+  --size-05: 0.5rem;
+  --size-08: 0.8rem;
+  --size-09: 0.9rem;
+  --size-1: 1rem;
+  --size-1-4: 1.4rem;
+  --size-1-5: 1.5rem;
+  --size-2: 2rem;
+  --radius: 0.4rem;
+  --radius-large: 0.7rem;
+  --radius-xl: 2rem;
+}
 
-<body>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  <!-- Contenedor para el cabecero de la plantilla -->
-  <div class="pan">
-    <header class="header">
-      <div class="header__container">
-        <div class="menu">
-          <h1 class="titulo">Deli//<span style="font-weight: normal;">Break</span></h1>         
-          <nav>
-            <ul class="header_vinculos">
-              <li class="li_vinculos"><a class="vinculos" href="">Beverages</a></li>
-              <li class="li_vinculos"><a class="vinculos" href="">Desserts</a></li>
-              <li class="li_vinculos"><a class="vinculos" href="">Desserts</a></li>
-              <li class="li_vinculos"><a class="vinculos" href="">Promotions</a></li>
-              <li class="li_vinculos"><a class="vinculos" href="">Star program</a></li>
-              <li class="li_vinculos"><a class="vinculos" href="">Branches</a></li>
-              <li class="li_vinculos"><a class="vinculos" href="">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-  </div>
-  <main class="sección1">
-    <div class="parteuno">
-      <div clas="slider">
-        <div class="slider_contenedor">
-          <figure class="slinder_imagen">
-            <img src="pastel_uno.png" alt="pastel" class="slinder__img">
-          </figure>
-          <div class="slider_informacionn">
-            <h1 class="text_primer">Learn how to make amazing cakes</h1>
-            <h1 class="texto_segundo">Have you already tried the classic double chocolate cake?</h1>
-            <div class="boton-unoo">
-              <a href="#" class="btn btn--unoo">Pastry courses</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="partedos">
-      <div class="card_dos">
-        <div class="smoothie-details">
-          <h1 class="texto_primero">Healthy and Delicious</h1>
-          <h2 class="texto_segundo">Taste delicious smoothies with seasonal fruits</h2>
-          <p class="texto_tercero">Lorem, ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
-          <h2 class="texto_cuarto">Traditional fruit smoothie only $6</h2>
-          <ul class="texto_quinto">
-            <li>Extra Oats</li>
-            <li>Extra Fruit</li>
-            <li>Extra Cream</li>
-            <li>Extra Topping</li>
-          </ul>
-          <div class="boton">
-            <a href="#" class="btn">Buy Now</a>
-          </div>
-          <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, deleniti?</h3>
-        </div>
-        <div class="smoothie-image">
-          <img src="Layer 10.png" alt="smoothie-image">
-        </div>
-      </div>
-      <div class="centered-text">
-        <p>piña</p>
-      </div>
-    </div>
-    <div class="partetres">
-      <div class="slider">
-        <div class="slider_contenedor">
-          <figure class="slider_imagen">
-            <img src="Layer 17.png" alt="jarra" class="slider_img">
-          </figure>
-          <div class="slider_informacion_tres">
-            <h1 class="texto_primero">Beverage courses</h1>
-            <h2 class="texto_segundo">Learn how to combine fruits and vegetables in the right way</h2>
-            <div class="conter_text">
-              <div class="header__search">
-                <input type="text" placeholder="Name" class="header__input">
-              </div>
-              <div class="header__search">
-                <input type="text" placeholder="Email" class="header__input">
-              </div>
-              <div class="boton">
-                <a href="#" class="btn">Search for dates</a>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore assumenda minus fuga sunt quasi eveniet
-                sint
-                nemo cum cumque aut!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>    
+html {
+  font-family: var(--font-open-sans);
+  height: 100%;
+}
 
-    <div class="parteseis">
-      <div class="card_seis">
-        <div class="contenedor_seis">
-          <div class="smoothie-image"></div>
-            <img src="ImageN-removebg-preview.png" alt="smoothie-image">
-          </div>
-          <div class="smoothie-details">
-            <h1 class="titulo">Deli//<span style="font-weight: normal;">Break</span></h1>         
-            <h2>Learn more about us</h2>
-            <h2>Passionate about always offering you the best</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna
-              aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-              facilisis.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna
-              aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-              facilisis.
-            </p>
-            <div class="boton">
-              <a href="#" class="btn">Read more</a>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna
-              aliqua Quis</p>
-          </div>
-        </div>
-      <h2 class="Texto_fuera_card">| Quality and taste//Guaranteed</h2>
-    </div>
- 
-    <div class="partecinco">
-      <div class="slider">
-        <div class="contenedor_cinco"></div>
-        <div class="slider_informacion">
-          <h1>Sugar Free Shakes</h1>
-          <h2>The best calorie-free flavor</h2>
-          <p>Order yours delivered to your home or visit your favorite branch</p>
-          <div class="boton">
-            <a href="#" class="btn">Find a branch</a>
-          </div>
-          <a href="#" class="btn">Place your order</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="parteseis">
-      <div class="card_seis">
-        <div class="contenedor_seis">
-          <div class="smoothie-details">
-            <h2>Learn more about us</h2>
-            <h2>Passionate about always offering you the best</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna
-              aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-              facilisis.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna
-              aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-              facilisis.
-            </p>
-            <div class="boton">
-              <a href="#" class="btn">Read more</a>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna
-              aliqua Quis</p>
-          </div>
-        </div>
-        <div class="smoothie-image"></div>
-        <img src="layer 19.png" alt="smoothie-image">
-      </div>
-      <h2 class="Texto_fuera_card">| Quality and taste//Guaranteed</h2>
-    </div>
-    <div class="partesiete">
-      <div class="card_siete">
-        <div class="contenedor siete">
-          <div class="area-uno">
-            <h1>Favorite seasonal smoothie</h1>
-            <h2>The most loved by the little ones</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-            <ul class="texto_cuarto">
-              <li>+ Extra Topping</li>
-              <li>+ Extra Cream</li>
-              <li>+ Extra Gummies</li>
-            </ul>
-            <div class="boton">
-              <a href="#" class="btn">Buy Now</a>
-            </div>
-          </div>
-          <div class="area-dos">
-            <div class="smoothie-image"></div>
-              <img src="Layer 19.png" alt="smoothie-image">
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>    
-    <div class="parteocho">
-      <div class="contenedor_ocho">
-        <div class="contenedor-text">
-          <h1 class="texto_primero_ocho">Deli//<span style="font-weight: normal;">Break</span></h1>         
-          <h2 class="texto_segundo_ocho">Your favorite free 
-            drink on your birthday</h2>
-          </br>
-          <div class="boton-uno">
-            <a href="" class="btn btn--uno">Sign up now</a>
-          </div>
-          <p class="texto_terce_ocho">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna
-            aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-            facilisis.
-          </p>
-        </div>
-      </div>
-    </div>
-  </main>
-  <div class="partenueve">
-    <footer class="pie_pagina">
-        <div class="pie_contenedor">
-           <div class="celda">
-             <h1 class="titulo">Deli//<span style="font-weight: normal;">Break</span></h1>         
-            </div>
-            <div class="celda">
-                <p>|  Quality and taste // Guaranteed
-                </p>
-            </div>
-            <div class="celda celda--tres">
-              <p>Quality and taste
-              </p>
-            </div>
-            <div class="columnas">
-              <div class="columna">
-                <div class="columnasdos">
-                  <div class="columnar">
-                   <p>Beverage</p>
-                   <p>Desserts</p>
-                   <p>Promotions</p>
-                   <p>Star Program</p>
-                   <P>Branches</P>
-                   <p>Contact</p>
-                  </div>
-                  <div class="columnar">
-                    <div class="celdas">
-                        <p>Gallery</p>
-                    </div>
-                    <div class="celdas">
-                        <p>Blog</p>
-                    </div>
-                    <div class="celdas">
-                        <p>Star Program</p>
-                    </div>
-                 </div>
-              </div>
-              <div class="columna"></div>
-           </div>
-        </div>
-    </footer>
-  </div>
-</html>
+body {
+  font-size: var(--size-1);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.menu .header_vinculos{ 
+  display: flex;
+
+}
+
+.header {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  background: rgba(55, 55, 55, 255);
+  box-shadow: 0 1px 1px var(--box-shadow);
+  z-index: 10;
+  width: 1058px;
+  height: 186px;
+  border-radius: 0px 0px 70px 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pan{
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+
+.menu .titulo{
+  display: flex;
+  align-items: center;
+  font-size: 70px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+
+.titulo_vinculos {
+  color: #fff;
+}
+
+.li_vinculos {
+  display: flex;
+  list-style-type: none;
+  float: left;
+  margin: 30px;
+}
+
+.vinculos {
+  text-decoration: none;
+  color: #fff;
+  transition: border-bottom 0.1s;
+}
+
+.vinculos:hover {
+  border-bottom: 1px solid var(--color--letra);
+}
+
+
+.boton-unoo{
+  margin-bottom: -50px ;
+}
+
+.btn--unoo{
+  padding: 10px 90px;
+  border-radius: 85px;
+}
+
+
+
+.btn:hover {
+  color: rgb(34 38 68);
+  background: white;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  border: solid;
+}
+
+
+.header__search {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+}
+
+.header__input {
+  background-color: #ffffff; /* Usando la variable de color de fondo */
+  color: var(--color-gray); /* Usando la variable de color de texto */
+  border: 1px solid var(--color-principal); /* Añadiendo borde */
+  padding: 8px 12px; /* Ajustando el relleno */
+  border-radius: 5px; /* Agregando bordes redondeados */
+  margin-right: 5px; /* Ajustando el margen derecho */
+  width: 200px; /* Estableciendo un ancho fijo */
+}
+
+.search__btn {
+  background-color: var(--color-primary); /* Usando la variable de color principal */
+  color: var(--white); /* Usando la variable de color blanco */
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Agregando transición */
+}
+
+.search__btn:hover {
+  background-color: var(--bg-hover); /* Cambiando el color de fondo al pasar el cursor */
+}
+
+.search__btn {
+  border: none;
+  padding: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 9px 9px 0px;
+}
+
+/* Primera parte*/
+
+.parteuno {
+  background-color: rgba(245,233,228,255);
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+.slider {
+  height: calc(100vh - var(--header));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.slider_contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.slider_informacionn {
+  flex: 1;
+  display: flex;
+  max-width: 620px;
+  margin: 0 20px;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.slider__img {
+    max-width: 720px;
+}
+
+.Pastel{
+  height: 150px;
+  width: 200px;
+}
+
+
+.text_primer {
+  font-weight: normal;
+}
+
+
+.partedos {
+  display: flex;
+  background-color: rgba(245, 233, 228, 255);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction:column;
+}
+
+.card_dos {
+  display: flex;
+  width: 876px; /* Ampliado el tamaño */
+  border: solid 1px #ffffff; /* Cambiado el color del borde a blanco */
+  padding: 138px;
+  text-align: center;
+  gap: 2rem;
+  border-radius: 120px;
+  box-shadow: 0 0px 10px 0px #d9d9d9;
+  background-color: #ffffff; /* Cambiado el color de fondo a blanco */
+}
+
+.centered-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.smoothie-image {
+  flex: 1;
+}
+
+.smoothie-image img {
+  width: 80%; /* Ampliado el tamaño de la imagen */
+  height: auto;
+  border-radius: 4px;
+}
+
+.smoothie-details {
+  flex: 2;
+}
+
+.smoothie-details h2 {
+  margin-top: 0;
+}
+
+.smoothie-details .texto_cuarto{
+  color: rgba(197,143,118,255);
+}
+
+
+.partetres {
+    display: flex;
+    background-color: rgba(245, 233, 228, 255);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+}
+
+
+
+.slider {
+  height: calc(100vh - var(--header));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.slider_contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.slider_informacion_tres {
+    flex: 1;
+    max-width: 620px;
+    margin: 0 20px;
+}
+
+
+.slider_informacion_tres .conter-text{
+  display: flex;
+}
+
+.slider__img {
+    max-width: 720px;
+}
+
+.jarra{
+  height: 150px;
+  width: 200px;
+}
+
+
+.text_primer {
+  font-weight: normal;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.left-content {
+  flex: 1;
+  text-align: center;
+}
+
+.left-content img {
+  max-width: 100%;
+}
+
+.right-content {
+  flex: 1;
+  text-align: left;
+  padding: 0 20px; /* Ajusta el espaciado a tu gusto */
+}
+
+.right-content h1, 
+.right-content h2,
+.right-content p {
+  margin: 10px 0;
+}
+
+.header__search {
+  margin-bottom: 10px;
+}
+
+.boton {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: rgba(197,143,118,255);
+  color: var(--color-principal);
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.slider_informacion{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ justify-content: flex-start;
+}
+
+.slider_informacion .texto_segundo{
+  font-weight: normal;
+}
+
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Estilos para las filas y columnas */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+/* Estilo para la imagen */
+.col img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Estilos para los detalles del smoothie */
+.title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.text {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.text li {
+  margin-bottom: 10px;
+}
+
+.centered__text {
+  text-align: center;
+  padding: 20px;
+}
+
+.partecinco {
+  background-color: rgba(245,233,228,255);
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+.slider {
+  height: calc(100vh - var(--header));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.partecuatro {
+  background-color: rgba(245,233,228,255);
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.contenedor_cuatro {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.slider_informacion {
+    flex: 1;
+    max-width: 620px;
+    margin: 0 20px;
+}
+
+.slider__img {
+    max-width: 720px;
+}
+
+.Pastel{
+  height: 150px;
+  width: 200px;
+}
+
+
+.text_primer {
+  font-weight: normal;
+}
+
+.parteseis {
+  background-color: rgba(245,233,228,255);
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.container{
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.card_seis {
+    display: flex;
+    width: 876px;
+    border: solid 1px #ffffff;
+    text-align: center;
+    gap: 2rem;
+    border-radius: 120px;
+    box-shadow: 0 0px 10px 0px #d9d9d9;
+    background-color: #ffffff;
+}
+
+
+.Texto_fuera_card {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.partesiete {
+  display: flex;
+  background-color: var(--color-principal);
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  align-content: flex-start;
+  height: 100vh;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card_siete {
+  display: flex;
+  background-color: rgba(245,233,228,255);
+  height: 100vh;
+  width: 876px;
+  height: 150px;
+  border: solid 1px #ffffff;
+  text-align: center;
+  gap: 2rem;
+  border-radius: 0 120px 120px 0px;
+  box-shadow: 0 0px 10px 0px #d9d9d9;
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+.area-uno {
+  flex: 1;
+  padding: 20px;
+}
+
+.area-dos {
+  flex: 1;
+}
+
+.parteocho {
+  background-size: var(--color-principal);
+  height: 730px;  
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  height: 100vh;
+}
+
+.contenedor_ocho{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This will make the container take up the full height of the view. */
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+.texto_primero_ocho{
+  font-size: 90px;
+  margin-bottom: 10px;
+}
+
+.texto_segundo_ocho{
+ font-weight: normal;
+ margin-bottom: 10px;
+ align-self: center;
+
+}
+
+
+
+.boton-uno{
+  margin-bottom:20px ;
+}
+
+.btn--uno{
+  padding: 10px 86px;
+  background-color: rgb(55, 55, 55);
+  border-radius: 85px;
+
+}
+
+.partenueve{
+  background-size: var(--color-principal);
+  height: 730px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-content: space-around;
+  align-items: flex-end;
+}
+
+.pie_pagina {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  background: rgba(55, 55, 55, 255);
+  box-shadow: 0 1px 1px var(--box-shadow);
+  z-index: 10;
+  width: 1058px;
+  height: 516px;
+  border-radius: 70px 70px 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie_contenedor {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 1rem;
+  align-items: center;
+  gap: 0px;
+}
+
+.celda {
+  padding: 20px; /* Espaciado interno de las celdas */
+  text-align: center;
+  width: 836px;
+}
+
+.celda .titulo{
+  font-size: 70px;
+}
+
+.celda--tres{
+  display: flex;
+}
+
+.columnas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columna {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  height: 171px;
+}
+
+.columnasdos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnar {
+  flex: 1;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-right: 86px; /* Ajusta el valor según tu preferencia */
+  margin-bottom: 10px; /* Ajusta el valor según tu preferencia */
+
+}
